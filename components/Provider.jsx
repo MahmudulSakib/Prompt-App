@@ -1,7 +1,9 @@
-import Link from "@node_modules/next/link";
+"use client";
 
-const Provider = () => {
-  return <div></div>;
+import { SessionProvider } from "next-auth/react";
+
+const Provider = ({ children, session }) => {
+  return <SessionProvider session={session}>{children}</SessionProvider>;
 };
 
 export default Provider;
