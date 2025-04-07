@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
@@ -32,7 +33,11 @@ const PropmptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
           />
           <div className="flex flex-col">
             <h3 className="font-semibold text-gray-900">
-              {post.creator.username}
+              <Link
+                href={`/profile/${post.creator._id}?name=${post.creator.username}`}
+              >
+                {post.creator.username}
+              </Link>
             </h3>
             <p className="text-sm text-gray-500">{post.creator.email}</p>
           </div>
@@ -46,6 +51,7 @@ const PropmptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             }
             width={12}
             height={12}
+            alt="copied_image"
           />
         </div>
       </div>
