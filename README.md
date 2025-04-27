@@ -1,4 +1,4 @@
-# AI-powered Prompt App
+# AI-Powered Prompt App
 
 ## Technology Used
 
