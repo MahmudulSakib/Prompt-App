@@ -1,8 +1,17 @@
-# AI-powered a beautifull and simplified promptopia Next.js app with nice customization
+# AI-powered Prompt App
 
-## Developed by Mahmudul Hasan Sakib
+## Technology Used
 
-> [!NOTE]
-> This code is open for everyone and you can use it freely
+- Next.js
+- Javascript
+- Next-Auth
+- MongoDB
+- TailwindCSS
 
-### Thank you for visiting
+![A ScreenShot of Home](/assets/Home.png)
+![A ScreenShot of Home](/assets/Profile.png)
+![A ScreenShot of Home](/assets/Create.png)
+
+## Developed by
+
+### Mahmudul Hasan Sakib
